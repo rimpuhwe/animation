@@ -138,4 +138,47 @@ section{
 .btn:hover{
     transform: scale(1.1);
 }
+.price{
+    display: flex;
+    align-items:center;
+    font-size: 28px;
+    font-weight: bolder;
+    color:var(--text-color);
+}
+/* anchor with prices */
+.price span{
+    font-size: 17px;
+    font-weight: 400;
+    color:var(--main-color); 
+    margin-left: 10px;
+}
+/* the icons  */
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 7%;
+    transform: translate(-50% );
+}
+.icons i{
+    display: block;
+    margin: 35px o;
+    color: var(--text-color);
+    font-size: 23px;
+    transition: all .6s;
+}
+.icons:hover{
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+.scroll{
+    position: absolute;
+    top: 92%;
+    right: 7%;
+    transform: translateY(-50%);
+}
+.scroll a{
+    font-size: 16px;
+    color: var(--text-color);
+    margin-right: 6px;
+}
   
