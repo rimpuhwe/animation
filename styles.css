@@ -33,7 +33,7 @@ header{
     justify-content: space-between;
     transition: all.50s;
 }
-.logo{
+.logo img{
     width: 100%;
     height: auto;
 }
@@ -58,11 +58,12 @@ color: var(--main-color );
 .nav-btn{
     display: inline-block;
     padding: 9px 24px;
-    background:transparent;
+    background:transparent; 
     border:2px solid var(--text-color);
-    border-radius: 15px;
-    font-weight: 500;
-    transition: all.6s ease;
+    border-radius: 7px;
+    font-weight:   500;
+    font-size: 15px;
+    transition: all.6s ease;  
 
 }
 .nav-btn:hover{
@@ -71,39 +72,39 @@ color: var(--main-color );
     color: var(--main-color) ;
 }
 /* div with id of menu-icons */
-#menu-icon{
+   #menu-icon{
     font-size: 42px;
     z-index: 10001;
     cursor:pointer;
     margin-left: 25px;
     display: none;
-}
+   }
 /* sections styling  */
-section{
+   section{
 
     padding: 0 14%; 
-}
+   }
 /* section with class of  hero */
-.hero{
+   .hero{
     position: relative;
     width: 100%;
     height:100vh;
-    background: url(bg.png);
+    background: url("bg.png");
     background-position: center;
     display: grid;
     grid-template-columns:repeat(2,1fr);
     align-items: center;
     gap:2rem;
 
-}
-.hero-img{
+   }
+   .hero-img{
     width: 100%;
     height:auto;
-}
+   }
 .hero-text h1{
-    font-size:var(--big-font);
-    font-weight: 900;
-    margin: 15 px 0 ; 
+font-size:var(--big-font);
+font-weight: 900;
+margin: 15 px 0 ; 
 }
 .hero-text h5{
     font-size: 18px;
@@ -111,13 +112,13 @@ section{
     letter-spacing: 1px;
 }
 .hero-text p{
-    width:100%;
-    max-width: 620px;
-    font-size: var(--p-font);
-    font-weight: 400;
-    line-height: 32px;
-    color: var(--text-color);
-     margin-bottom: 40px;
+width:100%;
+max-width: 620px;
+font-size: var(--p-font);
+font-weight: 400;
+line-height: 32px;
+color: var(--text-color);
+margin-bottom: 40px;
 }
 .main-hero{
     display: flex;
@@ -147,10 +148,10 @@ section{
 }
 /* anchor with prices */
 .price span{
-    font-size: 17px;
-    font-weight: 400;
-    color:var(--main-color); 
-    margin-left: 10px;
+     font-size: 17px;
+     font-weight: 400;
+     color:var(--main-color); 
+     margin-left: 10px;
 }
 /* the icons  */
 .icons{
@@ -230,7 +231,7 @@ section{
         top: 0;
         right: 0;
         bottom: 0;
-        left: 0;
+        left: 100%;
         display: flex;
         flex-direction: column;
         backdrop-filter: blur(32px);
