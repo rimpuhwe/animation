@@ -1,89 +1,77 @@
 /* removing default margin and padding  */
-*,::after,::before{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 /* defining th ecolor and fonts varables  */
 :root{
-    --bg-color:#0c0c0c;
-    --text-color:#fff;
-    --main-color:#ae8957;
-    --big-font:6.6rem;
-    --p-font:1rem; 
+    --bg-color: #0c0c0c;
+    --text-color: #fff;
+    --main-color: #ae8957;
+    --big-font: 6.6rem;
+    --p-font: 1rem;
+
 }
-/* giving body background */
 body{
-    background:var(--bg-color);
-    color:var(--text-color) ;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 /* styling the header */
 header{
-    position: fixed; 
-    width:100%;
-    top:0;
-    right:0;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right:0 ;
     z-index: 1000;
     padding: 35px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all.50s;
+    transition: all .50s ease;
 }
 .logo img{
-    width: 100%;
+    width:100% ;
     height: auto;
 }
 .navlist{
     display: flex;
+    
 }
 .navlist a{
-    display: inline-block;
-    margin: 0 35px;
-    color:var(--text-color);
-    font-size: var(--p-font);
-    transition: all .6s ease;
+display: inline-block;
+margin: 0;
+color: var(--text-color);
+font-size:var(--p-font) ;
+transition: all .6s ease;
+padding: 3px;
 
 }
 .navlist a:hover{
-color: var(--main-color );
+        color: var(--main-color);
 }
 .right-content{
     display: flex;
     align-items: center;
 }
 .nav-btn{
-    display: inline-block;
-    padding: 9px 24px;
-    background:transparent; 
-    border:2px solid var(--text-color);
-    border-radius: 7px;
-    font-weight:   500;
-    font-size: 15px;
-    transition: all.6s ease;  
-
+    display:inline-block;
+    padding:9px 24px;
+    background: transparent ;
+    border: 2px solid var(--text-color);
 }
-.nav-btn:hover{
-    transform: translateY(-5px);
-    border: 2px solid var(--main-color);
-    color: var(--main-color) ;
-}
-/* div with id of menu-icons */
-   #menu-icon{
+#menu-icon{
     font-size: 42px;
     z-index: 10001;
-    cursor:pointer;
-    margin-left: 25px;
-    display: none;
-   }
-/* sections styling  */
-   section{
-
-    padding: 0 14%; 
-   }
+    cursor: pointer;
+    margin-left:25px ;
+}
+section{
+    padding: 0 14%;
+}
 /* section with class of  hero */
    .hero{
     position: relative;
@@ -182,7 +170,7 @@ margin-bottom: 40px;
     color: var(--text-color);
     margin-right: 6px;
 }
-/* media query */
+    /* media query */
 @media(max-width:1770px){
     header{
         padding: 22px 4%;
@@ -292,5 +280,5 @@ margin-bottom: 40px;
         width: 360px;
         margin: 0 auto
     }
-} 
+}
   
